@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclo For 100 veces</title>
+</head>
+<body>
+
+  <h1>Ejemplo de ciclo For en JavaScript</h1>
+  <div id="resultado"></div>
+
+  <script>
+    const contenedor = document.getElementById("resultado");
+
+    // Ciclo for que se repite 100 veces
+    for (let i = 0; i < 100; i++) {
+      // Muestra el resultado en la consola (F12 en el navegador)
+      console.log("Iteración número: " + (i + 1));
+
+      // Muestra el resultado directamente en la página web
+      contenedor.innerHTML += "<p> numero: " + (i + 1) + "</p>";
+    }
+  </script>
+
+</body>
+</html> 
